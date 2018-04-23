@@ -48,7 +48,7 @@ s5 = size(out4);
 Automatically creates the black image to fit all the corrected images:
 zero = zeros(s5(1)+60, s1(2)+s2(2)+s3(2)+s4(2)+s5(2)-o4(1)-o3(1)+o2(1)+o1(1)-300);
 
-Gets the biggest vertical size:
+Gets the biggest vertical size so the image will start from point [1 1]:
 if -o4(2)>-o2(2)
     sw = -o4(2)+1;
 else
